@@ -63,5 +63,5 @@ class TestSpeedMonitoringSystem(unittest.TestCase):
         self.system.speed_data.delete_speed_entry("zone1", "001")
         self.assertEqual(len(self.system.speed_data.read_speed_entries("zone1")), 1)
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     unittest.main()
